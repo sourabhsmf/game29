@@ -17,9 +17,8 @@
 		else
 			return false;
 	}
-	public boolean function allowPublish(publisherInfo){
-		writeDump(var = "here" , output="console");
-		WSPublish(channelname = "game29",message="joined");
+	public boolean function allowPublish(){
+		WSPublish(channel = "game29" , message="joined");
 		return true;
 	}
 }
