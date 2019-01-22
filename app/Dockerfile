@@ -1,0 +1,1 @@
+FROM eaps-docker-coldfusion.bintray.io/cf/coldfusion:latest

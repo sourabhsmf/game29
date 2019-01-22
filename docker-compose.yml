@@ -1,0 +1,21 @@
+version: "3" 
+services:
+    coldfusion: 
+        container_name: cf-app
+        build:
+          context: ./app
+          dockerfile: Dockerfile
+        image: app
+        ports:
+        - "8500:8500"
+        - "8581:8581"
+        volumes:
+        - "//e/docker:/app"
+        env_file:
+        - coldfusion.env
+        networks: 
+        - webnet
+ 
+ 
+networks:
+    webnet:
